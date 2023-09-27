@@ -1,0 +1,14 @@
+h2 {
+  color: blueviolet;
+}
+ul {
+  width: 400px;
+  background-color: lightcoral;
+  padding: 10px;
+}
+li {
+  width: 300px;
+  background-color: lightgreen;
+  margin: 5px;
+  padding: 15px;
+}
