@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+      }
+      #leftPanel {
+        width: 20%;
+        background-color: black;
+      }
+      #rightPanel {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="leftPanel">
+        <iframe src="Anchor.html" width="100%" height="100%"></iframe>
+      </div>
+
+      <div id="rightPanel">
+        <iframe
+          name="rightFrame"
+          width="100%"
+          height="100%"
+          src="Htmldoc.html"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
