@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function changeContent() {
+        document.querySelector("h2").innerText = "Javascript";
+        document.querySelector("h2").style.color = "red";
+        var imgRef = document.createElement("img");
+        imgRef.src =
+          "https://static.pexels.com/photos/63764/pexels-photo-63764.jpeg";
+        imgRef.width = "300";
+        imgRef.height = "300";
+        document.querySelector("body").appendChild(imgRef);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>HTML Document</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        deleniti animi aliquid quod debitis eum saepe in odio dolor mollitia
+        atque nesciunt, suscipit eveniet eos, error quia soluta fugit? Minus, a
+        mollitia! Laboriosam corrupti a, provident at recusandae maiores magni!
+      </p>
+
+      <button onclick="changeContent()">Change Content</button>
+    </div>
+  </body>
+</html>

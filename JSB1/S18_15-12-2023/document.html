@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>My first Doc</title>
+    <script>
+      function changeH2Content() {
+        var h2Ref = document.getElementById("title");
+
+        for (var key in h2Ref) {
+          document.write(key);
+          document.write("<br><br>");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h2 id="title">Main Title</h2>
+      </div>
+
+      <div>
+        <p id="p1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+          quaerat atque, consectetur illo doloremque enim aperiam iste aliquid
+          expedita dicta commodi corrupti nesciunt, nobis error sequi ipsum cum,
+          in odit exercitationem ad perferendis dolorem voluptas? Incidunt fuga
+          animi obcaecati? Repudiandae!
+        </p>
+      </div>
+      <button id="btn" onclick="changeH2Content()">Change Content</button>
+    </div>
+  </body>
+</html>
