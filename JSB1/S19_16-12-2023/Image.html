@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function changeToReact() {
+        var imageRef = document.getElementById("image");
+        imageRef.src =
+          "https://www.sleeplessyogi.com/static/127b470a1814ca2ae06d9f40df34f190/reactjs.png";
+      }
+      function changeToNodeJS() {
+        var imageRef = document.getElementById("image");
+        imageRef.src =
+          "https://th.bing.com/th/id/OIP.Tf4BFI6846neirVSebC0vAAAAA?rs=1&pid=ImgDetMain";
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 50px">
+      <div>
+        <img
+          onmouseenter="changeToReact()"
+          onmouseleave="changeToNodeJS()"
+          id="image"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png"
+          width="500"
+          height="300"
+        />
+      </div>
+
+      <div>
+        <button onclick="changeToReact()">React JS</button>
+        <button onclick="changeToNodeJS()">Node JS</button>
+      </div>
+    </div>
+  </body>
+</html>
