@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function changeColor() {
+        var h2Ref = document.querySelector("#title");
+        h2Ref.style.color = "red";
+        h2Ref.style.backgroundColor = "black";
+        h2Ref.style.padding = "20px";
+
+        // for (var keys in h2Ref.style) {
+        //   document.write(keys);
+        //   document.write("<br>");
+        // }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="title">Hello Javascript</h2>
+    <button onclick="changeColor()">Change Color</button>
+  </body>
+</html>
