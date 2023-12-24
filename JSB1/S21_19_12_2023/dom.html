@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function createPElement() {
+        var pRef = document.createElement("p"); // <p>  </p> // p DOM Element
+        pRef.innerText = "I am new P Element, created using Javascript"; // <p>I am new P Element, created using Javascript</p>
+
+        var divRef = document.querySelector("div");
+        divRef.appendChild(pRef);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>New DOM Element (p)</h2>
+
+      <button onclick="createPElement()">Create p element</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function createPElement() {
+        var olRef = document.createElement("ol"); //<ol> </ol>
+        var li1 = document.createElement("li"); //<li> </li>
+        var li2 = document.createElement("li"); //<li> </li>
+        var li3 = document.createElement("li"); //<li> </li>
+        var li4 = document.createElement("li"); //<li> </li>
+
+        li1.innerText = "HTML";
+        li2.innerText = "CSS";
+        li3.innerText = "JS";
+        li4.innerText = "REACT";
+
+        olRef.appendChild(li1); //<ol><li>HTML</li></ol>
+        olRef.appendChild(li2); //<ol><li>HTML</li><li>CSS</li></ol>
+        olRef.appendChild(li3);
+        olRef.appendChild(li4);
+
+        var divRef = document.querySelector("div");
+        divRef.appendChild(olRef);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>New DOM Element (ol)</h2>
+
+      <button onclick="createPElement()">Create ol element</button>
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>Angular</li>
+      </ol>
+    </div>
+  </body>
+</html>
