@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 5px solid black;
+        padding: 30px;
+        width: 500px;
+      }
+      .child {
+        border: 5px solid rgb(191, 21, 21);
+        padding: 30px;
+        width: 300px;
+      }
+      body {
+        border: 5px solid rgb(83, 191, 21);
+        padding: 30px;
+        width: 800px;
+      }
+    </style>
+    <script>
+      function f1() {
+        alert("childDiv is called");
+      }
+      function f2() {
+        alert("button is called");
+      }
+      function f3() {
+        alert("parentdiv is called");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="parent" onclick="f3()">
+      <div class="child" onclick="f1()">
+        <button onclick="f2()">click me</button>
+      </div>
+    </div>
+  </body>
+</html>
