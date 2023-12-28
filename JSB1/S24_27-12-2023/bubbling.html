@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .parent {
+        width: 500px;
+        padding: 50px;
+        border: 5px solid red;
+      }
+      .child {
+        width: 300px;
+        padding: 50px;
+        border: 3px solid rgb(0, 255, 4);
+      }
+      body {
+        width: 800px;
+        padding: 50px;
+        border: 8px solid rgb(76, 0, 255);
+      }
+    </style>
+    <script>
+      function parent() {
+        alert("parent is called");
+      }
+      function child() {
+        alert("child is called");
+      }
+      function fnbody() {
+        alert("fnbody is called");
+      }
+      function btn() {
+        alert("btn is called");
+      }
+    </script>
+  </head>
+  <body onclick="fnbody()">
+    <div class="parent" onclick="parent()">
+      <div class="child" onclick="child()">
+        <button onclick="btn()">Click Me</button>
+      </div>
+    </div>
+  </body>
+</html>

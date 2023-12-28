@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function f1() {
+        // alert("working");
+        var b1Ref = document.getElementById("b1");
+        var b2Ref = document.getElementById("b2");
+
+        b1Ref.addEventListener("click", function () {
+          b1Ref.style.color = "green";
+        });
+
+        b1Ref.addEventListener("mouseenter", function () {
+          b1Ref.style.color = "red";
+        });
+
+        b2Ref.addEventListener("mouseenter", function () {
+          b2Ref.style.color = "orange";
+          b2Ref.style.fontSize = "30px";
+        });
+
+        b2Ref.addEventListener("mouseleave", function () {
+          b2Ref.style.color = "black";
+          b2Ref.style.fontSize = "15px";
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>AddEventListener</h2>
+    <button id="b1">Without Event</button>
+
+    <button id="b2" onclick="f1()">With Event</button>
+  </body>
+</html>
